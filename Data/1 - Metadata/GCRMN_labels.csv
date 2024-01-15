@@ -1,0 +1,109 @@
+Label;Code;Group
+Acropora cervicornis;AcrCerv;Hard coral
+Acropora palmata;AcrPalm;Hard coral
+Acropora prolifera;AcrPro;Hard coral
+Agaricia agaricites;AgAga;Hard coral
+Agaricia fragilis;AgFra;Hard coral
+Agaricia grahamae;AgGra;Hard coral
+Agaricia humilis;AgHum;Hard coral
+Agaricia lamarcki;AgLam;Hard coral
+Agaricia tenuifolia;AgTen;Hard coral
+Agaricia undata;AgUnd;Hard coral
+Bleached coral point;BL;Hard coral
+Dichocoenia stellaris;CIS;Hard coral
+Colpophyllia breviserialis;COB;Hard coral
+Colpophyllia natans;CoNat;Hard coral
+Coral;Coral;Hard coral
+Coral Juvenile;Cor_juv;Hard coral
+Diploria clivosa;DC;Hard coral
+Dendrogyra cylindrus;DenCyl;Hard coral
+Dichocoenia stokesi;Dicho_stok;Hard coral
+Diploria labyrinthiformis;DiplLab;Hard coral
+Diseased Coral;DISCORAL;Hard coral
+Diploria stigosa;DS;Hard coral
+Eusmilia fastigiata;EFAS;Hard coral
+Favia fragum;FaviaFrag;Hard coral
+Isophyllia sinuosa;IsophSin;Hard coral
+Leptoseris cucullata;LEPCU;Hard coral
+Montastraea annularis;MA;Hard coral
+Manicina areolata;MAA;Hard coral
+Madracis decactis;MadDeca;Hard coral
+Madracis mirabilis;MAMI;Hard coral
+Montastraea faveolata;MF;Hard coral
+Montastrea franksi;MFRA;Hard coral
+Meandrina meandrites;MM;Hard coral
+Montastrea cavernosa;MoCav;Hard coral
+Mussa angulosa;MUSANG;Hard coral
+Mycetophyllia aliciae;MycetAli;Hard coral
+Mycetophyllia danaana;MycetDan;Hard coral
+Mycetophyllia ferox;MycetFer;Hard coral
+Mycetophyllia lamarckana;MycetLam;Hard coral
+Oculina diffusa;OCD;Hard coral
+Old dead coral (encrusting);ODencr;Hard coral
+Porites astreoides;PorAstr;Hard coral
+Porites branneri;PorBran;Hard coral
+Porites divaricata;PorDiv;Hard coral
+Porites furcata;PorFurc;Hard coral
+Porites porites;PorPor;Hard coral
+Pseudodiploria strigosa;PseuStrig;Hard coral
+Recently dead coral;RDC;Hard coral
+Scolymia cubensis;SCOCUB;Hard coral
+Scolymia lacera;SCOLA;Hard coral
+Siderastrea radians;SidRad;Hard coral
+Siderastrea siderea;SidSid;Hard coral
+Stephanocoenia michellini;SMIC;Hard coral
+Solenastrea hyades;SOL;Hard coral
+Solenastrea bournoni;SOLBOU;Hard coral
+Tubastraea aurea;TA;Hard coral
+Ascidian;ASCD;Ascidian
+Dead Gorgonian;DG;Gorgonian
+Erythropodium;erythro;Gorgonian
+Eunicea spp.;EUNSPP;Gorgonian
+Gorgonian;GOR;Gorgonian
+Briareum;GORG-BRI;Gorgonian
+Iciligorgia spp.;ICISPP;Gorgonian
+Millepora alcicornis;MILA;Fire coral
+Millepora complanata;MILC;Fire coral
+Millepora squarrosa;MIS;Fire coral
+Muriceopsis spp.;MURISPP;Gorgonian
+Muricea spp.;MURSPP;Gorgonian
+Palythoa;PALYTHO;Gorgonian
+Plexaura spp.;PLESPP;Gorgonian
+Plexaurella spp.;PLEXSPP;Gorgonian
+Pseudoplexaura spp.;PSESPP;Gorgonian
+Pseudopterogorgia;Pseudopter;Gorgonian
+Pterogorgia;Pterogorg;Gorgonian
+Sponge;SP;Sponge
+Zoanthid;Zoanthid;Zoanthid
+Sand;Sand;Soft Substrate
+Dead coral algae;DCA*;Hard Substrate
+Pavement;Pavement;Hard Substrate
+Aspergillus;ASP;Other
+Black Band Disease;BBDis;Disease
+Schizothrix;Cyan red;Cyanobacteria
+Other;O;Other
+other disease;OD;Disease
+Other like;Othli;Other
+Rubble;Rubble;Hard Substrate
+Shadow;SHAD;Other
+TAPE;TAPE;Other
+Unknown;Unk;Other
+Wand;WAND;Other
+white band disease;WBD;Disease
+White Plague, type II;WPII;Disease
+Yellow band disease;YBD;Disease
+Amphiroa sp.;Amphi;Algae
+CCA (crustose coralline algae);CCA;Algae
+Dictyota;Dictyota;Algae
+Halimeda;Halimeda;Algae
+Liagora;LIA;Algae
+Lobophora;Lobophora;Algae
+Macroalgae;MAL;Algae
+Padina;Padina;Algae
+Porolithon;Poro;Algae
+Rhodophyta;RHODO;Algae
+Sargassum;Sargassum;Algae
+Stypopodium sp.;Styp;Algae
+Turbinaria (algae);Turbin;Algae
+Turf algae;Turf;Algae
+Wrangelia;WRA;Algae

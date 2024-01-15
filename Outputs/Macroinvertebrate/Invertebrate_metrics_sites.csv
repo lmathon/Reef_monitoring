@@ -1,0 +1,49 @@
+"Year","Site","Site_ID","LongspineSeaUrchin_Abundance","LongspineSeaUrchin_Density","OtherSeaUrchin_Abundance","OtherSeaUrchin_Density","SeaCucumbers_Abundance","SeaCucumbers_Density","Lobster_Abundance","Lobster_Density","Conch_Abundance","Conch_Density"
+"2016","Frenchman Reef","2016-Frenchman Reef",0,0,1,0.0166666666666667,1,0.0166666666666667,0,0,0,0
+"2016","Mikes Mazes","2016-Mikes Mazes",0,0,0,0,0,0,0,0,0,0
+"2016","Proselyte Reef","2016-Proselyte Reef",0,0,0,0,0,0,0,0,0,0
+"2016","Long Bay Reef","2016-Long Bay Reef",0,0,0,0,0,0,0,0,2,0.0333333333333333
+"2016","Shark Hotel","2016-Shark Hotel",0,0,0,0,0,0,0,0,0,0
+"2016","Fish Bowl","2016-Fish Bowl",0,0,0,0,0,0,0,0,0,0
+"2016","Moonscape","2016-Moonscape",0,0,0,0,0,0,0,0,0,0
+"2017_pre","Frenchman Reef","2017_pre-Frenchman Reef",4,0.0666666666666667,0,0,0,0,0,0,0,0
+"2017_pre","Shark Hotel","2017_pre-Shark Hotel",0,0,0,0,0,0,0,0,0,0
+"2017_pre","Fish Bowl","2017_pre-Fish Bowl",0,0,0,0,0,0,0,0,0,0
+"2017_pre","Proselyte Reef","2017_pre-Proselyte Reef",0,0,0,0,0,0,1,0.0166666666666667,0,0
+"2017_pre","Mikes Mazes","2017_pre-Mikes Mazes",0,0,0,0,0,0,4,0.0666666666666667,0,0
+"2017_pre","Long Bay Reef","2017_pre-Long Bay Reef",0,0,0,0,0,0,0,0,0,0
+"2017_pre","Moonscape","2017_pre-Moonscape",0,0,0,0,0,0,0,0,0,0
+"2017_post","Moonscape","2017_post-Moonscape",0,0,1,0.0166666666666667,0,0,0,0,0,0
+"2017_post","Long Bay Reef","2017_post-Long Bay Reef",0,0,0,0,0,0,0,0,0,0
+"2017_post","Fish Bowl","2017_post-Fish Bowl",0,0,0,0,0,0,0,0,0,0
+"2017_post","Shark Hotel","2017_post-Shark Hotel",0,0,0,0,0,0,0,0,0,0
+"2017_post","Frenchman Reef","2017_post-Frenchman Reef",0,0,0,0,0,0,0,0,0,0
+"2017_post","Proselyte Reef","2017_post-Proselyte Reef",0,0,0,0,0,0,0,0,0,0
+"2017_post","Mikes Mazes","2017_post-Mikes Mazes",0,0,0,0,0,0,0,0,0,0
+"2018","Mikes Mazes","2018-Mikes Mazes",0,0,0,0,0,0,0,0,1,0.0166666666666667
+"2018","Moonscape","2018-Moonscape",0,0,0,0,0,0,0,0,0,0
+"2018","Shark Hotel","2018-Shark Hotel",0,0,0,0,0,0,0,0,0,0
+"2018","Fish Bowl","2018-Fish Bowl",0,0,0,0,0,0,1,0.0166666666666667,0,0
+"2018","Frenchman Reef","2018-Frenchman Reef",0,0,0,0,0,0,0,0,0,0
+"2018","Long Bay Reef","2018-Long Bay Reef",0,0,0,0,0,0,0,0,0,0
+"2018","Proselyte Reef","2018-Proselyte Reef",0,0,0,0,0,0,0,0,0,0
+"2019","Moonscape","2019-Moonscape",0,0,0,0,0,0,0,0,0,0
+"2019","Fish Bowl","2019-Fish Bowl",0,0,0,0,0,0,0,0,0,0
+"2019","Shark Hotel","2019-Shark Hotel",0,0,0,0,0,0,0,0,0,0
+"2019","Long Bay Reef","2019-Long Bay Reef",0,0,0,0,0,0,0,0,3,0.05
+"2019","Frenchman Reef","2019-Frenchman Reef",17,0.283333333333333,7,0.116666666666667,0,0,0,0,3,0.05
+"2019","Proselyte Reef","2019-Proselyte Reef",0,0,0,0,0,0,1,0.0166666666666667,0,0
+"2019","Mikes Mazes","2019-Mikes Mazes",0,0,0,0,0,0,2,0.0333333333333333,0,0
+"2020","Moonscape","2020-Moonscape",0,0,0,0,0,0,0,0,0,0
+"2020","Frenchman Reef","2020-Frenchman Reef",0,0,5,0.0833333333333333,0,0,0,0,0,0
+"2020","Mikes Mazes","2020-Mikes Mazes",0,0,0,0,0,0,0,0,0,0
+"2020","Proselyte Reef","2020-Proselyte Reef",0,0,0,0,0,0,0,0,0,0
+"2020","Fish Bowl","2020-Fish Bowl",0,0,0,0,0,0,0,0,0,0
+"2020","Shark Hotel","2020-Shark Hotel",0,0,0,0,0,0,0,0,0,0
+"2023","Frenchman Reef","2023-Frenchman Reef",2,0.0333333333333333,4,0.0666666666666667,0,0,0,0,0,0
+"2023","Long Bay Reef","2023-Long Bay Reef",0,0,0,0,0,0,0,0,0,0
+"2023","Fish Bowl","2023-Fish Bowl",0,0,0,0,0,0,0,0,0,0
+"2023","Shark Hotel","2023-Shark Hotel",0,0,0,0,0,0,0,0,0,0
+"2023","Moonscape","2023-Moonscape",0,0,0,0,0,0,0,0,1,0.0166666666666667
+"2023","Proselyte Reef","2023-Proselyte Reef",0,0,0,0,0,0,0,0,1,0.0166666666666667
+"2023","Mikes Mazes","2023-Mikes Mazes",0,0,0,0,0,0,0,0,0,0

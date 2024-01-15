@@ -1,0 +1,54 @@
+Year;Month;Day;Location;Site;Latitude;Longitude;Depth_m;Observer;TimeStart;SurveyType;Current email;Sechhi_Horizontal_m;Sechhi_Vertical_m;Protection
+2016;July;25;St Maarten;Frenchman Reef;18.01.065;63.05.691;6,7;MM;13:44:00;BLT;Projects@naturefoundationsxm.org;21;>7.5;
+2016;July;27;St Maarten;Mikes Mazes;17.59.497;63.03.381;9,1;MM;12:15:00;BLT;Projects@naturefoundationsxm.org;>30;na;Marine Park
+2016;July;28;St Maarten;Proselyte Reef;17.59.378;63.03.525;12,8;MM;13:16:00;BLT;Projects@naturefoundationsxm.org;>30;>9.5;Marine Park
+2016;July;29;St Maarten;Long Bay Reef;18.02.566;63.08.531;14,3;MM;11:23:00;BLT;Projects@naturefoundationsxm.org;28;na;
+2016;August;8;St Maarten;Shark Hotel;17.59.336;63.03.197;13,7;MM;10:35:00;BLT;Projects@naturefoundationsxm.org;>30;>15;Marine Park
+2016;August;8;St Maarten;Fish Bowl;17.59.294;63.03.073;13,1;MM;12:07:00;BLT;Projects@naturefoundationsxm.org;32;>15;Marine Park
+2016;August;9;St Maarten;Moonscape;18.00.979;63.05.626;10,4;MM;13:20:00;BLT;Projects@naturefoundationsxm.org;20;7;
+2017;August;15;St Maarten;Frenchman Reef;18.01.065;63.05.691;7;MM;12:07:00;BLT;Projects@naturefoundationsxm.org;15;>8;
+2017;August;23;St Maarten;Shark Hotel;17.59.336;63.03.197;14;MM;11:02:00;BLT;Projects@naturefoundationsxm.org;35;>15;Marine Park
+2017;August;24;St Maarten;Fish Bowl;17.59.294;63.03.073;14;MM;10:55:00;BLT;Projects@naturefoundationsxm.org;45;>15;Marine Park
+2017;August;24;St Maarten;Proselyte Reef;17.59.378;63.03.525;13,7;MM;12:22:00;BLT;Projects@naturefoundationsxm.org;40;>15;Marine Park
+2017;August;25;St Maarten;Mikes Mazes;17.59.497;63.03.381;10,8;MM;10:05:00;BLT;Projects@naturefoundationsxm.org;50;>12;Marine Park
+2017;August;31;St Maarten;Long Bay Reef;18.02.566;63.08.531;15,7;MM;13:58:00;BLT;Projects@naturefoundationsxm.org;31;>16;
+2017;August;31;St Maarten;Moonscape;18.00.979;63.05.626;10;MM;15:13:00;BLT;Projects@naturefoundationsxm.org;30;>10;
+2017;November;28;St Maarten;Moonscape;18.00.979;63.05.626;10,6;MM;14:15:00;BLT;Projects@naturefoundationsxm.org;15;>10;
+2017;November;30;St Maarten;Long Bay Reef;18.02.566;63.08.531;15,9;MM;10:25:00;BLT;Projects@naturefoundationsxm.org;21;>16;
+2017;December;1;St Maarten;Fish Bowl;17.59.294;63.03.073;14;MM;12:49:00;BLT;Projects@naturefoundationsxm.org;22;>16;Marine Park
+2017;December;12;St Maarten;Shark Hotel;17.59.336;63.03.197;13,5;MM;9:43:00;BLT;Projects@naturefoundationsxm.org;20;15;Marine Park
+2017;December;12;St Maarten;Frenchman Reef;18.01.065;63.05.691;7,5;MM;10:55:00;BLT;Projects@naturefoundationsxm.org;13;8;
+2017;December;13;St Maarten;Proselyte Reef;17.59.378;63.03.525;14,9;MM;10:17:00;BLT;Projects@naturefoundationsxm.org;20;15;Marine Park
+2017;December;13;St Maarten;Mikes Mazes;17.59.497;63.03.381;11,5;MM;11:35:00;BLT;Projects@naturefoundationsxm.org;19;13;Marine Park
+2018;September;4;St Maarten;Mikes Mazes;17.59.497;63.03.381;10,9;MM;10:39:00;BLT;Projects@naturefoundationsxm.org;28;na;Marine Park
+2018;September;4;St Maarten;Moonscape;18.00.979;63.05.626;10,4;MM;12:25:00;BLT;Projects@naturefoundationsxm.org;22;na;
+2018;September;5;St Maarten;Shark Hotel;17.59.336;63.03.197;13,5;MM;11:56:00;BLT;Projects@naturefoundationsxm.org;27;na;Marine Park
+2018;September;9;St Maarten;Fish Bowl;17.59.294;63.03.073;12,8;MM;13:44:00;BLT;Projects@naturefoundationsxm.org;29;na;Marine Park
+2018;September;18;St Maarten;Frenchman Reef;18.01.065;63.05.691;6,6;MM;12:28:00;BLT;Projects@naturefoundationsxm.org;26;na;
+2018;September;19;St Maarten;Long Bay Reef;18.02.566;63.08.531;14,8;MM;10:51:00;BLT;Projects@naturefoundationsxm.org;30;na;
+2018;November;6;St Maarten;Proselyte Reef;17.59.378;63.03.525;14,8;MM;11:16:00;BLT;Projects@naturefoundationsxm.org;28;na;Marine Park
+2019;August;19;St Maarten;Moonscape;18.00.979;63.05.626;9,9;MM;12:01:00;BLT;Projects@naturefoundationsxm.org;na;>11;
+2019;August;20;St Maarten;Fish Bowl;17.59.294;63.03.073;13,1;MM;12:05:00;BLT;Projects@naturefoundationsxm.org;30;>17;Marine Park
+2019;August;21;St Maarten;Shark Hotel;17.59.336;63.03.197;13,5;MM;11:50:00;BLT;Projects@naturefoundationsxm.org;26;>16;Marine Park
+2019;August;22;St Maarten;Long Bay Reef;18.02.566;63.08.531;15,4;MM;10:13:00;BLT;Projects@naturefoundationsxm.org;29;>16;
+2019;August;22;St Maarten;Frenchman Reef;18.01.065;63.05.691;7,4;MM;11:36:00;BLT;Projects@naturefoundationsxm.org;13;>8;
+2019;August;23;St Maarten;Proselyte Reef;17.59.378;63.03.525;14,4;MM;11:25:00;BLT;Projects@naturefoundationsxm.org;36;>16;Marine Park
+2019;August;27;St Maarten;Mikes Mazes;17.59.497;63.03.381;11,3;MM;10:14:00;BLT;Projects@naturefoundationsxm.org;30;>14;Marine Park
+2020;November;24;St Maarten;Moonscape;18.00.979;63.05.626;10,2;MM;12:18:00;BLT;Manager@naturefoundationsxm.org;na;na;
+2020;November;24;St Maarten;Frenchman Reef;18.01.065;63.05.691;7,6;MM;13:24:00;BLT;Manager@naturefoundationsxm.org;na;na;
+2020;November;26;St Maarten;Mikes Mazes;17.59.497;63.03.381;11,3;MM;11:45:00;BLT;Manager@naturefoundationsxm.org;na;na;Marine Park
+2020;November;26;St Maarten;Proselyte Reef;17.59.378;63.03.525;13,5;MM;12:56:00;BLT;Manager@naturefoundationsxm.org;na;na;Marine Park
+2020;November;27;St Maarten;Fish Bowl;17.59.294;63.03.073;13,0;MM;10:44:00;BLT;Manager@naturefoundationsxm.org;na;na;Marine Park
+2020;November;27;St Maarten;Shark Hotel;17.59.336;63.03.197;13;MM;12:10:00;BLT;Manager@naturefoundationsxm.org;na;na;Marine Park
+2020;November;;St Maarten;Long Bay Reef;18.02.566;63.08.531;14,5;MM;;BLT;Manager@naturefoundationsxm.org;na;na;
+2023;May;16;St Maarten;Frenchman Reef;18.01.065;63.05.691;7,5;;;BLT;Manager@naturefoundationsxm.org;na;na;
+2023;August;23;St Maarten;Long Bay Reef;18.02.566;63.08.531;14,1;;10:52:00;BLT;Manager@naturefoundationsxm.org;na;na;
+2023;August;25;St Maarten;Fish Bowl;17.59.294;63.03.073;15;;12:45:00;BLT;Manager@naturefoundationsxm.org;na;na;Marine Park
+2023;September;14;St Maarten;Shark Hotel;17.59.336;63.03.197;13,3;;9:31:00;BLT;Manager@naturefoundationsxm.org;>30;na;Marine Park
+2023;September;14;St Maarten;Moonscape;18.00.979;63.05.626;10,7;;11:21:00;BLT;Manager@naturefoundationsxm.org;na;na;
+2023;September;21;St Maarten;Proselyte Reef;17.59.378;63.03.525;14,2;;9:50:00;BLT;Manager@naturefoundationsxm.org;>30;na;Marine Park
+2023;September;21;St Maarten;Mikes Mazes;17.59.497;63.03.381;11,3;;11:10:00;BLT;Manager@naturefoundationsxm.org;>30;na;Marine Park
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;
