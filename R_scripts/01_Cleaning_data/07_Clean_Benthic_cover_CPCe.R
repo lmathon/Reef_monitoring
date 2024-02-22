@@ -52,6 +52,8 @@ colnames(Benthic_cover_site) <- gsub("Millipora","Millepora", colnames(Benthic_c
 colnames(Benthic_cover_site) <- gsub("Diploria strigosa","Pseudodiploria strigosa", colnames(Benthic_cover_site))
 colnames(Benthic_cover_site) <- gsub("Palythoa sp.","Palythoa", colnames(Benthic_cover_site))
 colnames(Benthic_cover_site) <- gsub("Montastrea faveolata","Orbicella faveolata", colnames(Benthic_cover_site))
+colnames(Benthic_cover_site) <- gsub("Montastraea annularis","Orbicella annularis", colnames(Benthic_cover_site))
+colnames(Benthic_cover_site) <- gsub("Montastrea franksi","Orbicella franksi", colnames(Benthic_cover_site))
 colnames(Benthic_cover_site) <- gsub("Stephanocoenia michelinii","Stephanocoenia intersepta", colnames(Benthic_cover_site))
 
 

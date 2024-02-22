@@ -641,8 +641,12 @@ Fish_family_abund_site <- Fish_family_abund_site%>%
   filter(Family%in%families)%>%
   filter(!is.na(Site))
 
+prop <- Fish_family_abund_site %>%
+  group_by(Site_ID)%>%
+  mutate(perc = Number/sum(Number))
+
 # plot mean Fish family proportion per year
-ggplot(Fish_family_abund_site, aes(x=Year,fill=Family,y=Number))+
+plot <- ggplot(Fish_family_abund_site, aes(x=Year,fill=Family,y=Number))+
   geom_bar(position="fill",stat="identity")+
   labs(x="", y="Family proportion", title="Proportion of each family per site")+
   facet_wrap(~Site)+

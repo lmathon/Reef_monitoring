@@ -50,6 +50,8 @@ colnames(Benthic_cover_site2) <- gsub("Diseased Coral","Diseased coral", colname
 colnames(Benthic_cover_site2) <- gsub("Yellow band disease","Yellow Blotch Disease", colnames(Benthic_cover_site2))
 colnames(Benthic_cover_site2) <- gsub("Other like" ,"OTHER LIVE" , colnames(Benthic_cover_site2))
 colnames(Benthic_cover_site2) <- gsub("Montastraea faveolata","Orbicella faveolata", colnames(Benthic_cover_site2))
+colnames(Benthic_cover_site2) <- gsub("Montastrea franksi","Orbicella franksi", colnames(Benthic_cover_site2))
+colnames(Benthic_cover_site2) <- gsub("Montastraea annularis","Orbicella annularis", colnames(Benthic_cover_site2))
 colnames(Benthic_cover_site2) <- gsub("Montastrea cavernosa","Montastraea cavernosa", colnames(Benthic_cover_site2))
 colnames(Benthic_cover_site2) <- gsub("Mycetophyllia lamarckana","Mycetophyllia lamarckiana", colnames(Benthic_cover_site2))
 colnames(Benthic_cover_site2) <- gsub("Stephanocoenia michellini","Stephanocoenia intersepta", colnames(Benthic_cover_site2))

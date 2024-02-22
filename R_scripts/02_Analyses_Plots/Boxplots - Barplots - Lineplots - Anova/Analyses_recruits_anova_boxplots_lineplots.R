@@ -260,6 +260,10 @@ Recruits_abund_site <- left_join(Recruits_abund_site, Site_biodiv[,c("Year","Sit
 Recruits_abund_site <- Recruits_abund_site%>%
   filter(!is.na(Site))
 
+prop <- Recruits_abund_site %>%
+  group_by(Site_ID)%>%
+  mutate(perc = Number/sum(Number))
+
 # plot mean Fish family proportion per year
 ggplot(Recruits_abund_site, aes(x=Year,fill=GenusSN))+
   geom_bar(position="fill")+

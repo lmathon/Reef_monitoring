@@ -1,0 +1,63 @@
+"Year","Month","Day","Location","Site","Latitude","Longitude","Depth_m","TimeStart","Sechhi_Horizontal_m","Sechhi_Vertical_m","Protection","Site_ID","Fish_observer","SST","DHW","dist_to_coast"
+"2016","July","25","St Maarten","Frenchman Reef",18.01775,-63.09485,"6.7","13:44:00","21",">7.5","NA","2016-Frenchman Reef","TS",28.53,0,711
+"2016","July","27","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"9.1","12:15:00",">30","NA","Marine Park","2016-Mikes Mazes","TS",28.55,0,2139
+"2016","July","28","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"12.8","13:16:00",">30",">9.5","Marine Park","2016-Proselyte Reef","TS",28.51,0,2490
+"2016","July","29","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"14.3","11:23:00","28","NA","NA","2016-Long Bay Reef","TS",28.76,0,1117
+"2016","August","8","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"13.7","10:35:00",">30",">15","Marine Park","2016-Shark Hotel","TS",29.07,0,2203
+"2016","August","8","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"13.1","12:07:00","32",">15","Marine Park","2016-Fish Bowl","TS",29.07,0,2178
+"2016","August","9","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"10.4","13:20:00","20","7","NA","2016-Moonscape","TS",28.92,0,807
+"2017_pre","August","15","St Maarten","Frenchman Reef",18.01775,-63.09485,"7","12:07:00","15",">8","NA","2017_pre-Frenchman Reef","TB",28.96,0,711
+"2017_pre","August","23","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"14","11:02:00","35",">15","Marine Park","2017_pre-Shark Hotel","TB",29.02,0,2203
+"2017_pre","August","24","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"14","10:55:00","45",">15","Marine Park","2017_pre-Fish Bowl","TB",28.88,0,2178
+"2017_pre","August","24","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"13.7","12:22:00","40",">15","Marine Park","2017_pre-Proselyte Reef","TB",28.88,0,2490
+"2017_pre","August","25","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"10.8","10:05:00","50",">12","Marine Park","2017_pre-Mikes Mazes","TB",28.98,0,2139
+"2017_pre","August","31","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"15.7","13:58:00","31",">16","NA","2017_pre-Long Bay Reef","TB",29.21,0.47,1117
+"2017_pre","August","31","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"10","15:13:00","30",">10","NA","2017_pre-Moonscape","TB",29.23,0.46,807
+"2017_post","November","28","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"10.6","14:15:00","15",">10","NA","2017_post-Moonscape","TB",28.48,0.15,807
+"2017_post","November","30","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"15.9","10:25:00","21",">16","NA","2017_post-Long Bay Reef","TB",28.26,0,1117
+"2017_post","December","1","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"14","12:49:00","22",">16","Marine Park","2017_post-Fish Bowl","TB",28.24,0,2178
+"2017_post","December","12","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"13.5","09:43:00","20","15","Marine Park","2017_post-Shark Hotel","TB",27.67,0,2203
+"2017_post","December","12","St Maarten","Frenchman Reef",18.01775,-63.09485,"7.5","10:55:00","13","8","NA","2017_post-Frenchman Reef","TB",27.66,0,711
+"2017_post","December","13","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"14.9","10:17:00","20","15","Marine Park","2017_post-Proselyte Reef","TB",27.67,0,2490
+"2017_post","December","13","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"11.5","11:35:00","19","13","Marine Park","2017_post-Mikes Mazes","TB",27.67,0,2139
+"2018","September","4","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"10.9","10:39:00","28","NA","Marine Park","2018-Mikes Mazes","TB",28.58,0,2139
+"2018","September","4","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"10.4","12:25:00","22","NA","NA","2018-Moonscape","TB",28.57,0,807
+"2018","September","5","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"13.5","11:56:00","27","NA","Marine Park","2018-Shark Hotel","TB",28.43,0,2203
+"2018","September","9","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"12.8","13:44:00","29","NA","Marine Park","2018-Fish Bowl","TB",28.74,0,2178
+"2018","September","18","St Maarten","Frenchman Reef",18.01775,-63.09485,"6.6","12:28:00","26","NA","NA","2018-Frenchman Reef","TB",28.88,0,711
+"2018","September","19","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"14.8","10:51:00","30","NA","NA","2018-Long Bay Reef","TB",28.89,0,1117
+"2018","November","6","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"14.8","11:16:00","28","NA","Marine Park","2018-Proselyte Reef","TB",28.39,0,2490
+"2019","August","19","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"9.9","12:01:00","NA",">11","NA","2019-Moonscape","TB",28.83,0,807
+"2019","August","20","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"13.1","12:05:00","30",">17","Marine Park","2019-Fish Bowl","TB",28.9,0,2178
+"2019","August","21","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"13.5","11:50:00","26",">16","Marine Park","2019-Shark Hotel","TB",29.21,0,2203
+"2019","August","22","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"15.4","10:13:00","29",">16","NA","2019-Long Bay Reef","TB",29.25,0,1117
+"2019","August","22","St Maarten","Frenchman Reef",18.01775,-63.09485,"7.4","11:36:00","13",">8","NA","2019-Frenchman Reef","TB",29.23,0,711
+"2019","August","23","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"14.4","11:25:00","36",">16","Marine Park","2019-Proselyte Reef","TB",29.14,0,2490
+"2019","August","27","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"11.3","10:14:00","30",">14","Marine Park","2019-Mikes Mazes","TB",29.11,0,2139
+"2020","November","24","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"10.2","12:18:00","NA","NA","NA","2020-Moonscape","TB",28.18,2.86,807
+"2020","November","24","St Maarten","Frenchman Reef",18.01775,-63.09485,"7.6","13:24:00","NA","NA","NA","2020-Frenchman Reef","TB",28.18,2.86,711
+"2020","November","26","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"11.3","11:45:00","NA","NA","Marine Park","2020-Mikes Mazes","TB",28.12,2.54,2139
+"2020","November","26","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"13.5","12:56:00","NA","NA","Marine Park","2020-Proselyte Reef","TB",28.12,2.54,2490
+"2020","November","27","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"13","10:44:00","NA","NA","Marine Park","2020-Fish Bowl","TB",28.17,2.54,2178
+"2020","November","27","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"13","12:10:00","NA","NA","Marine Park","2020-Shark Hotel","TB",28.17,2.54,2203
+"2021","NA","NA","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"NA","NA","NA","NA","NA","2021-Moonscape","NA",NA,NA,NA
+"2021","NA","NA","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"NA","NA","NA","NA","Marine Park","2021-Fish Bowl","NA",NA,NA,NA
+"2021","NA","NA","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"NA","NA","NA","NA","Marine Park","2021-Shark Hotel","NA",NA,NA,NA
+"2021","NA","NA","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"NA","NA","NA","NA","NA","2021-Long Bay Reef","NA",NA,NA,NA
+"2021","NA","NA","St Maarten","Frenchman Reef",18.01775,-63.09485,"NA","NA","NA","NA","NA","2021-Frenchman Reef","NA",NA,NA,NA
+"2021","NA","NA","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"NA","NA","NA","NA","Marine Park","2021-Proselyte Reef","NA",NA,NA,NA
+"2021","NA","NA","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"NA","NA","NA","NA","Marine Park","2021-Mikes Mazes","NA",NA,NA,NA
+"2022","NA","NA","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"NA","NA","NA","NA","NA","2022-Moonscape","NA",NA,NA,NA
+"2022","NA","NA","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"NA","NA","NA","NA","Marine Park","2022-Fish Bowl","NA",NA,NA,NA
+"2022","NA","NA","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"NA","NA","NA","NA","Marine Park","2022-Shark Hotel","NA",NA,NA,NA
+"2022","NA","NA","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"NA","NA","NA","NA","NA","2022-Long Bay Reef","NA",NA,NA,NA
+"2022","NA","NA","St Maarten","Frenchman Reef",18.01775,-63.09485,"NA","NA","NA","NA","NA","2022-Frenchman Reef","NA",NA,NA,NA
+"2022","NA","NA","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"NA","NA","NA","NA","Marine Park","2022-Proselyte Reef","NA",NA,NA,NA
+"2022","NA","NA","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"NA","NA","NA","NA","Marine Park","2022-Mikes Mazes","NA",NA,NA,NA
+"2023","May","16","St Maarten","Frenchman Reef",18.01775,-63.09485,"7.5","NA","NA","NA","NA","2023-Frenchman Reef","BM",28.06,0,711
+"2023","August","23","St Maarten","Long Bay Reef",18.0427666666667,-63.1421833333333,"14.1","10:52:00","NA","NA","NA","2023-Long Bay Reef","ZP",29.29,3.51,1117
+"2023","August","25","St Maarten","Fish Bowl",17.9882333333333,-63.0512166666667,"15","12:45:00","NA","NA","Marine Park","2023-Fish Bowl","LM",29.43,3.51,2178
+"2023","September","14","St Maarten","Shark Hotel",17.9889333333333,-63.0532833333333,"13.3","09:31:00",">30","NA","Marine Park","2023-Shark Hotel","TB",29.95,7.79,2203
+"2023","September","14","St Maarten","Moonscape",18.0163166666667,-63.0937666666667,"10.7","11:21:00","NA","NA","NA","2023-Moonscape","TB",29.93,7.77,807
+"2023","September","21","St Maarten","Proselyte Reef",17.9896333333333,-63.05875,"14.2","09:50:00",">30","NA","Marine Park","2023-Proselyte Reef","TB",30.3,9.63,2490
+"2023","September","21","St Maarten","Mikes Mazes",17.9916166666667,-63.05635,"11.3","11:10:00",">30","NA","Marine Park","2023-Mikes Mazes","TB",30.3,9.63,2139

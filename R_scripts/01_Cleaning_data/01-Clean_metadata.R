@@ -52,7 +52,7 @@ GCRMN_meta <- left_join(GCRMN_meta, Fish_obs, by="Site_ID")
 GCRMN_meta <- GCRMN_meta[,-c(9,11,12)]
 
 # Write new clean file
-write.csv(GCRMN_meta, "C://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/1 - Metadata/GCRMN_metadata.csv", row.names = F)
+write.csv(GCRMN_meta, "C://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/1 - Metadata/GCRMN_metadata_clean.csv", row.names = F)
 
 # Add year 2021 and 2022 with NA, manually on csv file.
 
@@ -60,7 +60,7 @@ write.csv(GCRMN_meta, "C://Users/mathonlocal/Desktop/Nature Foundation/CORENA Pr
 #### Extract SST and DHW data ####
 
 # Load metadata file again
-GCRMN_meta <- read.csv("C://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/1 - Metadata/GCRMN_metadata.csv", sep=",", na.strings = "")
+GCRMN_meta <- read.csv("C://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/1 - Metadata/GCRMN_metadata_clean.csv", sep=",", na.strings = "")
 
 # load all sst raster files in a list
 setwd("c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/1 - Metadata/SST/")
@@ -138,4 +138,4 @@ metadata_dist$dist_to_coast <- dist_min
 GCRMN_meta <- left_join(GCRMN_meta, metadata_dist[,c("Site_ID","dist_to_coast")])
 
 
-write.csv(GCRMN_meta, file="c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/1 - Metadata/GCRMN_metadata.csv", row.names = F)
+write.csv(GCRMN_meta, file="c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/1 - Metadata/GCRMN_metadata_clean.csv", row.names = F)
