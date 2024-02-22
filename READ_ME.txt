@@ -1,4 +1,6 @@
 This repository contains data, R scripts and outputs for the analyses of GCRMN reef monitoring data in Sint Maarten, from 2016 to 2023.
+Analyses have been conducted by Laetitia Mathon, from Nature Foundation Sint Maarten.
+If any questions or comments, please contact laetitia@naturefoundationsxm.org or laetitia.mathon@gmail.com.
 
 In the Data folder:
 - 1-Metadata: contains surveys and sites information, and folders of sea surface temperature and degree heating weeks data
