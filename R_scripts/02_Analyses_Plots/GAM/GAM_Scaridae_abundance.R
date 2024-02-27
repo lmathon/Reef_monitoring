@@ -43,7 +43,7 @@ myData <- myData %>%
 
 load("c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/3 - Clean_data/Benthic_cover_site_all.rdata")
 
-myData <- left_join(myData, Benthic_cover_site_all[,c(1,3,4,5,7,9,122,123)])
+myData <- left_join(myData, Benthic_cover_site_all[,c(1,3,4,5,7,9,123,124)])
 
 myData$Site <- as.factor(myData$Site)
 myData$Protection <- as.factor(myData$Protection)
@@ -58,26 +58,6 @@ GAM1 = gam(Piscivorous_Biomass ~ Year+SST+Protection+Fish_density+Site+Bleaching
              dist_to_coast+GORGONIANS+MACROALGAE+Recruits_density+CORAL, data=myData)
 summary(GAM1)
 
-GAM2 = gam(Piscivorous_Biomass ~ Year+Protection+
-             s(GORGONIANS)+s(MACROALGAE), data=myData)
-summary(GAM2)
-gratia::draw(GAM2, residuals=F, nrow=2, parametric=T)
-
-
-
-GAM1 = gam(Piscivorous_Abundance ~ Year+SST+Protection+Fish_density+Site+Bleaching_frequency+Disease_frequency+DHW+
-             dist_to_coast+GORGONIANS+MACROALGAE+Recruits_density+CORAL, data=myData)
-summary(GAM1)
-
-GAM2 = gam(Piscivorous_Abundance ~ Year+Site+Protection+dist_to_coast+s(DHW)+s(CORAL)+s(SST), data=myData)
-summary(GAM2)
-gratia::draw(GAM2, residuals=F, nrow=2, parametric=T)
-
-
-
-GAM1 = gam(Scaridae_Abundance ~ Year+SST+Protection+Fish_density+Site+Bleaching_frequency+Disease_frequency+DHW+
-             dist_to_coast+GORGONIANS+MACROALGAE+Recruits_density+CORAL, data=myData)
-summary(GAM1)
 
 
 GAM2 = gam(Scaridae_Abundance ~ Year+s(GORGONIANS)+s(MACROALGAE)+
@@ -86,10 +66,6 @@ summary(GAM2)
 gratia::draw(GAM2, residuals=F, nrow=2)
 
 
-GAM2 = gam(Scaridae_Biomass ~ Year+SST+
-             dist_to_coast+s(MACROALGAE)+s(Recruits_density), data=myData)
-summary(GAM2)
-gratia::draw(GAM2, residuals=F, nrow=1)
 
 ggsave("c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Outputs/GAM/Scaridae_abundance/GAM_Scaridae_abundance.png")
 

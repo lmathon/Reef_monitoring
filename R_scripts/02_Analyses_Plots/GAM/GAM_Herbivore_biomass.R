@@ -43,7 +43,7 @@ myData <- myData %>%
 
 load("c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/3 - Clean_data/Benthic_cover_site_all.rdata")
 
-myData <- left_join(myData, Benthic_cover_site_all[,c(1,3,4,5,7,9,122,123)])
+myData <- left_join(myData, Benthic_cover_site_all[,c(1,3,4,5,7,9,123,124)])
 
 myData$Site <- as.factor(myData$Site)
 myData$Protection <- as.factor(myData$Protection)

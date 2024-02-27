@@ -99,7 +99,6 @@ load("c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monito
 Fish <- left_join(Fish, species_LW[,c("Species","a","b")], join_by("SpeciesSN" == "Species"))
 Fish[,c("Size_cm","a","b")] <- as.numeric(unlist(Fish[,c("Size_cm","a","b")]))
 Fish$Biomass <- (Fish$a*(Fish$Size_cm^Fish$b))*Fish$Number
-Fish$Biomass <- Fish$Biomass/1000
 
 Fish <- Fish %>%
   select(-c(a,b))
@@ -145,10 +144,13 @@ Fish_species_biomass_site <- Fish %>%
   group_by(Site_ID, SpeciesSN) %>% 
   summarise_all(funs(sum))
 
+# Transform from g/300m2 (site) to g/100m2
+Fish_species_biomass_site$Biomass <- Fish_species_biomass_site$Biomass/3
+
 # Transpose dataframe to have sites in lines and species in columns
 Fish_species_biomass_site <- spread(data=Fish_species_biomass_site, key="SpeciesSN", value="Biomass", fill = 0)
 
-# Compute total fish biomass per site
+# Compute total fish biomass per site (g/100m2)
 Fish_species_biomass_site$Fish_biomass <- rowSums(Fish_species_biomass_site[,c(2:ncol(Fish_species_biomass_site))])
 
 # Save Rdata
@@ -192,6 +194,9 @@ Fish_family_biomass_site <- Fish %>%
   filter(!is.na(Biomass))%>%
   group_by(Site_ID, Family) %>% 
   summarise_all(funs(sum))
+
+# Transform from g/300m2 (site) to g/100m2
+Fish_family_biomass_site$Biomass <- Fish_family_biomass_site$Biomass/3
 
 save(Fish_family_biomass_site, file="c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/3 - Clean_data/Family_biomass.rdata")
 
@@ -324,6 +329,9 @@ Fish_trophic_biomass_site <- Fish %>%
   filter(!is.na(Biomass))%>%
   group_by(Site_ID, trophic_group) %>% 
   summarise_all(funs(sum))
+
+# Transform from g/300m2 (site) to g/100m2
+Fish_trophic_biomass_site$Biomass <- Fish_trophic_biomass_site$Biomass/3
 
 save(Fish_trophic_biomass_site, file="c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/3 - Clean_data/Trophic_biomass.rdata")
 

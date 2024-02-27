@@ -409,10 +409,10 @@ pairwise.wilcox.test(Site_biodiv$Fish_biomass, Site_biodiv$cyclone,
 # plot mean Fish biomass per year 
 ggplot(Site_biodiv, aes(x=Year, y=Fish_biomass))+
   geom_boxplot(fill="lightgrey")+
-  annotate(geom="text", x=5, y=200, label="**", hjust=0.5, size=6, color="red", fontface = "bold")+
-  annotate(geom="text", x=2.5, y=300, label="**", hjust=0.5, size=6, color="red", fontface = "bold")+
+  annotate(geom="text", x=5, y=40000, label="**", hjust=0.5, size=6, color="red", fontface = "bold")+
+  annotate(geom="text", x=2.5, y=100000, label="**", hjust=0.5, size=6, color="red", fontface = "bold")+
   geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-  labs(x="", y="Fish biomass (Kg)", title="Biomass of all fish")+
+  labs(x="", y="Fish biomass (g/100m²)", title="Biomass of all fish")+
   scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
   theme_bw()+
   theme(axis.title.y = element_text(size = 12),
@@ -435,7 +435,7 @@ ggplot(Site_biodiv, aes(x=Year, y=Fish_biomass, group=1))+
   geom_line()+
   geom_point(aes(color=Protection))+
   geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-  labs(x="", y="Fish biomass (Kg)", title="Biomass of all fish per site")+
+  labs(x="", y="Fish biomass (g/100m²)", title="Biomass of all fish per site")+
   facet_wrap(~Site)+
   scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
   theme_bw()+
@@ -454,9 +454,6 @@ ggsave("c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Moni
 # Kruskal-Wallis mean comparison test (MPA/outside)
 KW_biomass_mpa <- kruskal.test(Fish_biomass~Protection, Site_biodiv)
 
-# anova Fish biomass between protection zones
-res.aov <- aov(Fish_biomass~Protection, biomass_year_mpa)
-summary(res.aov)
 
 # Compute mean and sd Fish biomass per year and protection status
 mean_biomass_year_mpa <- Site_biodiv %>%
@@ -472,11 +469,15 @@ names(sd_biomass_year_mpa) <- c("Year", "Protection", "SD_biomass")
 
 biomass_year_mpa <- cbind(mean_biomass_year_mpa[,c("Year", "Fish_biomass")], sd_biomass_year_mpa[,c("SD_biomass","Protection")])
 
+# anova Fish biomass between protection zones
+res.aov <- aov(Fish_biomass~Protection, biomass_year_mpa)
+summary(res.aov)
+
 # plot mean Fish biomass per year and protection status
 ggplot(Site_biodiv, aes(x=Year, y=Fish_biomass, fill=Protection))+
   geom_boxplot()+
   geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-  labs(x="", y="Fish biomass (Kg)", title="Biomass of all fish per protection status")+
+  labs(x="", y="Fish biomass (g/100m²)", title="Biomass of all fish per protection status")+
   scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
   theme_bw()+
   theme(axis.title.y = element_text(size = 12),
@@ -496,7 +497,7 @@ ggplot(biomass_year_mpa, aes(x=Year, y=Fish_biomass, group=Protection))+
   geom_point(aes(color=Protection))+
   geom_errorbar(aes(ymin=Fish_biomass-SD_biomass, ymax=Fish_biomass+SD_biomass, color=Protection), width=.2)+
   geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-  labs(x="", y="Mean Fish biomass (Kg)", title="Biomass of all fish per protection status")+
+  labs(x="", y="Mean Fish biomass (g/100m²)", title="Biomass of all fish per protection status")+
   scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
   theme_bw()+
   theme(axis.title.y = element_text(size = 12),
@@ -994,7 +995,7 @@ for (i in 1:length(families)) {
   plot_fam_biomass_year[[i]] <- ggplot(fam_df2, aes(x=Year, y=Mean_biomass))+
     geom_boxplot(fill="lightgrey")+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-    labs(x="", y="Biomass (kg)", title=paste0("Biomass of ", families[[i]]))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", families[[i]]))+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
     theme(axis.title.y = element_text(size = 12),
@@ -1014,7 +1015,7 @@ for (i in 1:length(families)) {
     geom_line()+
     geom_point(aes(color=Protection))+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-    labs(x="", y="Biomass (kg)", title=paste0("Biomass of ", families[[i]]," per site"))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", families[[i]]," per site"))+
     facet_wrap(~Site)+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
@@ -1052,7 +1053,7 @@ for (i in 1:length(families)) {
     geom_point(aes(color=Protection))+
     geom_errorbar(aes(ymin=Mean_biomass-SD_biomass, ymax=Mean_biomass+SD_biomass,color=Protection), width=.2)+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-    labs(x="", y="Biomass (kg)", title=paste0("Biomass of ", families[[i]]," per protection status"))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", families[[i]]," per protection status"))+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
     theme(axis.title.y = element_text(size = 12),
@@ -1066,7 +1067,7 @@ for (i in 1:length(families)) {
   plot_fam_biomass_year_mpa[[i]] <- ggplot(fam_df2, aes(x=Year, y=Mean_biomass, fill=Protection))+
     geom_boxplot()+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-    labs(x="", y="Biomass (kg)", title=paste0("Biomass of ", families[[i]]," per protection status"))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", families[[i]]," per protection status"))+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
     theme(axis.title.y = element_text(size = 12),
@@ -1084,19 +1085,19 @@ pairwise.wilcox.test(Site_biodiv$Acanthuridae_Biomass, Site_biodiv$Year, p.adjus
 pairwise.wilcox.test(Site_biodiv$Labridae_Biomass, Site_biodiv$Year, p.adjust.method = "BH")
 pairwise.wilcox.test(Site_biodiv$Scaridae_Biomass, Site_biodiv$Year, p.adjust.method = "BH")
 
-plot_fam_biomass_year[[1]] <- plot_fam_biomass_year[[1]] + annotate(geom="text", x=1, y=7.5, label="***", hjust=0.5, size=6, color="red", fontface = "bold")
-plot_fam_biomass_year[[2]] <- plot_fam_biomass_year[[2]] + annotate(geom="text", x=1, y=1.5, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
-plot_fam_biomass_year[[4]] <- plot_fam_biomass_year[[4]] + annotate(geom="text", x=5, y=0.14, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
-plot_fam_biomass_year[[8]] <- plot_fam_biomass_year[[8]] + annotate(geom="text", x=5, y=9, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_fam_biomass_year[[1]] <- plot_fam_biomass_year[[1]] + annotate(geom="text", x=1, y=2400, label="***", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_fam_biomass_year[[2]] <- plot_fam_biomass_year[[2]] + annotate(geom="text", x=1, y=470, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_fam_biomass_year[[4]] <- plot_fam_biomass_year[[4]] + annotate(geom="text", x=5, y=50, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_fam_biomass_year[[8]] <- plot_fam_biomass_year[[8]] + annotate(geom="text", x=5, y=3100, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
 
 
-plot_fam_biomass_year_mpa[[5]] <- plot_fam_biomass_year_mpa[[5]] + annotate(geom="text", x=9, y=7.5, label="**", hjust=0.5, size=7, color="red", fontface = "bold")
-plot_fam_biomass_year_mpa[[6]] <- plot_fam_biomass_year_mpa[[6]] + annotate(geom="text", x=9, y=270, label="**", hjust=0.5, size=7, color="red", fontface = "bold")
-plot_fam_biomass_year_mpa[[7]] <- plot_fam_biomass_year_mpa[[7]] + annotate(geom="text", x=9, y=90, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_fam_biomass_year_mpa[[5]] <- plot_fam_biomass_year_mpa[[5]] + annotate(geom="text", x=9, y=2500, label="**", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_fam_biomass_year_mpa[[6]] <- plot_fam_biomass_year_mpa[[6]] + annotate(geom="text", x=9, y=87500, label="**", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_fam_biomass_year_mpa[[7]] <- plot_fam_biomass_year_mpa[[7]] + annotate(geom="text", x=9, y=31000, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
 
-plot_fam_biomass_year[[2]] <- plot_fam_biomass_year[[2]] + annotate(geom="text", x=2.5, y=1.75, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
-plot_fam_biomass_year[[3]] <- plot_fam_biomass_year[[3]] + annotate(geom="text", x=2.5, y=20, label="**", hjust=0.5, size=7, color="red", fontface = "bold")
-plot_fam_biomass_year[[8]] <- plot_fam_biomass_year[[8]] + annotate(geom="text", x=2.5, y=9, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_fam_biomass_year[[2]] <- plot_fam_biomass_year[[2]] + annotate(geom="text", x=2.5, y=600, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_fam_biomass_year[[3]] <- plot_fam_biomass_year[[3]] + annotate(geom="text", x=2.5, y=6800, label="**", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_fam_biomass_year[[8]] <- plot_fam_biomass_year[[8]] + annotate(geom="text", x=2.5, y=3100, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
 
 
 
@@ -1440,7 +1441,7 @@ for (i in 1:length(trophic)) {
   plot_troph_biomass_year[[i]] <- ggplot(troph_df2, aes(x=Year, y=Mean_biomass))+
     geom_boxplot(fill="lightgrey")+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-    labs(x="", y="Biomass (Kg)", title=paste0("Biomass of ", trophic[[i]]," fish"))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", trophic[[i]]," fish"))+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
     theme(axis.title.y = element_text(size = 12),
@@ -1460,7 +1461,7 @@ for (i in 1:length(trophic)) {
     geom_line()+
     geom_point(aes(color=Protection))+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-    labs(x="", y="Biomass (Kg)", title=paste0("Biomass of ", trophic[[i]]," fish per site"))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", trophic[[i]]," fish per site"))+
     facet_wrap(~Site)+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
@@ -1481,7 +1482,7 @@ for (i in 1:length(trophic)) {
   plot_troph_biomass_year_mpa[[i]] <- ggplot(troph_df2, aes(x=Year, y=Mean_biomass, fill=Protection))+
     geom_boxplot()+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-    labs(x="", y="Biomass (Kg)", title=paste0("Biomass of ", trophic[[i]], " fish per protection status"))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", trophic[[i]], " fish per protection status"))+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
     theme(axis.title.y = element_text(size = 12),
@@ -1512,7 +1513,7 @@ for (i in 1:length(trophic)) {
     geom_point(aes(color=Protection))+
     geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
     geom_errorbar(aes(ymin=Mean_biomass-SD_biomass, ymax=Mean_biomass+SD_biomass, color=Protection), width=.2)+
-    labs(x="", y="Biomass (Kg)", title=paste0("Biomass of ", trophic[[i]], " fish per protection status"))+
+    labs(x="", y="Biomass (g/100m²)", title=paste0("Biomass of ", trophic[[i]], " fish per protection status"))+
     scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
     theme_bw()+
     theme(axis.title.y = element_text(size = 12),
@@ -1529,14 +1530,14 @@ for (i in 1:length(trophic)) {
 # add significance on graphs
 pairwise.wilcox.test(Site_biodiv$Piscivorous_Biomass, Site_biodiv$Year, p.adjust.method = "BH")
 
-plot_troph_biomass_year[[1]] <- plot_troph_biomass_year[[1]] + annotate(geom="text", x=2, y=6, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
-plot_troph_biomass_year[[4]] <- plot_troph_biomass_year[[4]] + annotate(geom="text", x=5, y=70, label="*", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_troph_biomass_year[[1]] <- plot_troph_biomass_year[[1]] + annotate(geom="text", x=2, y=2000, label="**", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_troph_biomass_year[[4]] <- plot_troph_biomass_year[[4]] + annotate(geom="text", x=5, y=30000, label="*", hjust=0.5, size=6, color="red", fontface = "bold")
 
-plot_troph_biomass_year[[2]] <- plot_troph_biomass_year[[2]] + annotate(geom="text", x=2.5, y=100, label="*", hjust=0.5, size=6, color="red", fontface = "bold")
-plot_troph_biomass_year[[4]] <- plot_troph_biomass_year[[4]] + annotate(geom="text", x=2.5, y=275, label="*", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_troph_biomass_year[[2]] <- plot_troph_biomass_year[[2]] + annotate(geom="text", x=2.5, y=33000, label="*", hjust=0.5, size=6, color="red", fontface = "bold")
+plot_troph_biomass_year[[4]] <- plot_troph_biomass_year[[4]] + annotate(geom="text", x=2.5, y=92000, label="*", hjust=0.5, size=6, color="red", fontface = "bold")
 
-plot_troph_biomass_year_mpa[[2]] <- plot_troph_biomass_year_mpa[[2]] + annotate(geom="text", x=9, y=100, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
-plot_troph_biomass_year_mpa[[4]] <- plot_troph_biomass_year_mpa[[4]] + annotate(geom="text", x=9, y=275, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_troph_biomass_year_mpa[[2]] <- plot_troph_biomass_year_mpa[[2]] + annotate(geom="text", x=9, y=33000, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
+plot_troph_biomass_year_mpa[[4]] <- plot_troph_biomass_year_mpa[[4]] + annotate(geom="text", x=9, y=92000, label="*", hjust=0.5, size=7, color="red", fontface = "bold")
 
 for (i in 1:length(trophic)) {
   ggsave(plot_troph_biomass_year[[i]], file=paste0("c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Outputs/Fish/Trophic/Boxplot_",trophic[[i]],"_biomass.png"))

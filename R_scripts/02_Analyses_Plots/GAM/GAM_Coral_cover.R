@@ -1,4 +1,3 @@
-
 library(vegan)
 library(ade4)
 library(lme4)
@@ -18,6 +17,7 @@ library(MuMIn)
 library(rcompanion)
 library(ggpubr)
 library(ggplot2)
+library(mgcv)
 
 
 

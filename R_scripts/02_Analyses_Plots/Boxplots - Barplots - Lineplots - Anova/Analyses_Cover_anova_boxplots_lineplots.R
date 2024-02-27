@@ -22,13 +22,13 @@ Benthic_cover <- Benthic_cover %>%
 
 
 # keep only important columns
-Cover <- Benthic_cover[,c(1:4,127,6:16,125,126)]
+Cover <- Benthic_cover[,c(1:4,128,6:16,121,126,127)]
 
 
 #########################################################################################
 #### Cover proportion per site ####
 
-df <- Cover[,c(1,6:16)]
+df <- Cover[,c(1,6:10,17,11:16)]
 df <- melt(df)
 df <- left_join(df, Cover[,c("Site_ID","Year","Site")])
 # plot mean benthos proportion per year
@@ -391,16 +391,17 @@ ggqqplot(Benthic_cover$MACROALGAE)
 shapiro.test(Benthic_cover$MACROALGAE) # -> not normal
 
 # Kruskal-Wallis mean comparison test (Year)
-KW_Macroalgae_year <- kruskal.test(MACROALGAE~Year, Benthic_cover) # --> Pas d'effet annee
+KW_Macroalgae_year <- kruskal.test(MACROALGAE~Year, Benthic_cover) # --> effet annee
 
 # Kruskal-Wallis mean comparison test (Cyclone)
-KW_Macroalgae_cyclone <- kruskal.test(MACROALGAE~cyclone, Benthic_cover) # --> pas d'effet cyclone
+KW_Macroalgae_cyclone <- kruskal.test(MACROALGAE~cyclone, Benthic_cover) # --> effet cyclone
 
 
 # plot mean Macroalgae cover per year 
 ggplot(Benthic_cover, aes(x=Year, y=MACROALGAE))+
   geom_boxplot(fill="lightgrey")+
   geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
+  annotate(geom="text", x=2.5, y=48, label="***", hjust=0.5, size=6, color="red", fontface = "bold")+
   labs(x="", y="Macroalgae cover (%)", title="Percentage of macroalgae cover")+
   scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
   theme_bw()+
@@ -462,7 +463,7 @@ Macroalgae_year_mpa <- cbind(mean_Macroalgae_year_mpa[,c("Year", "MACROALGAE")],
 ggplot(Benthic_cover, aes(x=Year, y=MACROALGAE, fill=Protection))+
   geom_boxplot()+
   geom_vline(xintercept = 2.5, linetype="twodash", color="grey30")+
-  annotate(geom="text", x=9, y=100, label="***", hjust=0.5, size=6, color="red", fontface = "bold")+
+  annotate(geom="text", x=9, y=60, label="***", hjust=0.5, size=6, color="red", fontface = "bold")+
   labs(x="", y="Macroalgae cover (%)", title="Percentage of macroalgae cover per protection status")+
   scale_x_discrete(limits=c("2016", "2017_pre", "2017_post", "2018", "2019","2020","2021","2022","2023"))+
   theme_bw()+

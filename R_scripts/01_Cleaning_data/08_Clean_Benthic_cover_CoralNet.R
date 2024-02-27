@@ -74,7 +74,8 @@ Benthic_cover_site2$SPONGES <- rowSums(Benthic_cover_site2[,75])
 Benthic_cover_site2$ZOANTHIDS <- rowSums(Benthic_cover_site2[,c(69,76)])
 Benthic_cover_site2$`SAND, PAVEMENT, RUBBLE` <- rowSums(Benthic_cover_site2[,c(77,79,85)])
 Benthic_cover_site2$GORGONIANS <- rowSums(Benthic_cover_site2[,c(58,60:63,67,68,70:74)])
-Benthic_cover_site2$MACROALGAE <- rowSums(Benthic_cover_site2[,c(91,93:106)])
+Benthic_cover_site2$MACROALGAE <- rowSums(Benthic_cover_site2[,c(91,93:103,105:106)])
+Benthic_cover_site2$TURF <- Benthic_cover_site2$Turf
 Benthic_cover_site2$`OTHER LIVE` <- rowSums(Benthic_cover_site2[,c(57,80,82,84,107,108)])
 Benthic_cover_site2$UNKNOWNS <- rowSums(Benthic_cover_site2[,87])
 
@@ -122,7 +123,7 @@ save(Benthic_cover_site_all, file="c://Users/mathonlocal/Desktop/Nature Foundati
 
 # Build table of metrics per site and year
 
-Cover_site <- Benthic_cover_site_all[,c(1,3:13,122,123)]
+Cover_site <- Benthic_cover_site_all[,c(1,3:13,118,123,124)]
 
 Cover_site[c('Year', 'Site')] <- str_split_fixed(Cover_site$Site_ID, '-', 2)
 Cover_site <- Cover_site[,-1]
@@ -130,9 +131,9 @@ Cover_site <- Cover_site[,-1]
 write.csv(Cover_site, file="c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Outputs/Cover/Cover_site.csv", row.names = F)
 
 
-Cover_year <- data.frame(matrix(ncol = 13, nrow = 0))
+Cover_year <- data.frame(matrix(ncol = 14, nrow = 0))
 names(Cover_year) <- c("Year","Mean_Coral_cover","Mean_Gorgonians_cover","Mean_Sponge_cover","Mean_Zoanthid_cover",
-                       "Mean_Macroalge_cover","Mean_Other_live_cover","Mean_Dead_Coral_With_Algae_cover",
+                       "Mean_Macroalge_cover","Mean_Turf_cover","Mean_Other_live_cover","Mean_Dead_Coral_With_Algae_cover",
                        "Mean_Coralline_Algae_cover","Mean_Diseased_Coral_cover","Mean_Sand_Pavement_Rubble_cover",
                        "Mean_Bleaching_frequency","Mean_Disease_frequency")
 
@@ -147,6 +148,7 @@ for (i in 1:length(year)) {
   Cover_year[i,"Mean_Sponge_cover"] <- paste0(round(mean(df$SPONGES,na.rm = T),3), " ± ", round(sd(df$SPONGES,na.rm = T),3))
   Cover_year[i,"Mean_Zoanthid_cover"] <- paste0(round(mean(df$ZOANTHIDS,na.rm = T),3), " ± ", round(sd(df$ZOANTHIDS,na.rm = T),3))
   Cover_year[i,"Mean_Macroalge_cover"] <- paste0(round(mean(df$MACROALGAE,na.rm = T),3), " ± ", round(sd(df$MACROALGAE,na.rm = T),3))
+  Cover_year[i,"Mean_Turf_cover"] <- paste0(round(mean(df$TURF,na.rm = T),3), " ± ", round(sd(df$TURF,na.rm = T),3))
   Cover_year[i,"Mean_Other_live_cover"] <- paste0(round(mean(df$`OTHER LIVE`,na.rm = T),3), " ± ", round(sd(df$`OTHER LIVE`,na.rm = T),3))
   Cover_year[i,"Mean_Dead_Coral_With_Algae_cover"] <- paste0(round(mean(df$`DEAD CORAL WITH ALGAE`,na.rm = T),3), " ± ", round(sd(df$`DEAD CORAL WITH ALGAE`,na.rm = T),3))
   Cover_year[i,"Mean_Coralline_Algae_cover"] <- paste0(round(mean(df$`CORALLINE ALGAE`,na.rm = T),3), " ± ", round(sd(df$`CORALLINE ALGAE`,na.rm = T),3))

@@ -56,6 +56,8 @@ colnames(Benthic_cover_site) <- gsub("Montastraea annularis","Orbicella annulari
 colnames(Benthic_cover_site) <- gsub("Montastrea franksi","Orbicella franksi", colnames(Benthic_cover_site))
 colnames(Benthic_cover_site) <- gsub("Stephanocoenia michelinii","Stephanocoenia intersepta", colnames(Benthic_cover_site))
 
+Benthic_cover_site$MACROALGAE <- Benthic_cover_site$MACROALGAE - Benthic_cover_site$Turf
+Benthic_cover_site$TURF <- Benthic_cover_site$Turf
 
 write.csv(Benthic_cover_site, file = "c://Users/mathonlocal/Desktop/Nature Foundation/CORENA Project/Reef_Monitoring/Data/3 - Clean_data/Benthic_cover_site.csv", row.names = FALSE)
 
